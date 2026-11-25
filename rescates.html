@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial Organizado - Sistema de Rescate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">Listado Organizado de Casos Registrados</h1>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Inicio (Dashboard)</a></li>
+          <li><a href="reportar.html" class="nav-link">Reportar un Rescate</a></li>
+          <li><a href="rescates.html" class="nav-link active">Ver Rescates e Historial</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-block">
+      <h2 class="section-title">Monitoreo General de Rescates Activos e Históricos</h2>
+      <p class="section-subtitle">Base de datos estructural que consolida los reportes ingresados por la comunidad y el personal del refugio.</p>
+
+      <div class="table-responsive">
+        <table class="data-table">
+          <caption>Control Estadístico e Historial de Urgencias</caption>
+          <thead>
+            <tr>
+              <th id="th-codigo">Código</th>
+              <th id="th-titulo">Título / Nombre</th>
+              <th id="th-cat">Categoría</th>
+              <th id="th-urgencia">Urgencia</th>
+              <th id="th-obs">Observación de Encuentro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td headers="th-codigo"><strong>REC-001</strong></td>
+              <td headers="th-titulo">Canino Mestizo - "Firulais"</td>
+              <td headers="th-cat">Perros</td>
+              <td headers="th-urgencia"><span class="badge badge-high">Alta</span></td>
+              <td headers="th-obs">Fractura expuesta en extremidad posterior derecha. En cirugía.</td>
+            </tr>
+            <tr>
+              <td headers="th-codigo"><strong>REC-002</strong></td>
+              <td headers="th-titulo">Gato Siamés Callejero</td>
+              <td headers="th-cat">Gatos</td>
+              <td headers="th-urgencia"><span class="badge badge-medium">Media</span></td>
+              <td headers="th-obs">Cuadro severo de deshidratación y desnutrición. Estable.</td>
+            </tr>
+            <tr>
+              <td headers="th-codigo"><strong>REC-003</strong></td>
+              <td headers="th-titulo">Búho Terrestre Rescatado</td>
+              <td headers="th-cat">Fauna Silvestre</td>
+              <td headers="th-urgencia"><span class="badge badge-low">Baja</span></td>
+              <td headers="th-obs">Ala atascada en red plástica. Sin lesiones óseas aparentes.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

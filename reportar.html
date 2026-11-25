@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingreso de Animal Rescatado - Sistema de Rescate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">Formulario de Ingreso de Casos</h1>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Inicio (Dashboard)</a></li>
+          <li><a href="reportar.html" class="nav-link active">Reportar un Rescate</a></li>
+          <li><a href="rescates.html" class="nav-link">Ver Rescates e Historial</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-block">
+      <h2 class="section-title">Ingreso de un Nuevo Animal Rescatado</h2>
+      <p class="section-subtitle">Complete minuciosamente el formulario para despachar la atención correspondiente.</p>
+
+      <form action="#" method="POST">
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">Información General del Caso</legend>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="titulo_caso" class="form-label">Título del Caso / Nombre Provisional:</label>
+              <input type="text" id="titulo_caso" name="titulo_caso" class="form-control" required placeholder="Ej. Cachorro abandonado sector norte">
+            </div>
+
+            <div class="form-group">
+              <label for="categoria" class="form-label">Categoría del Animal:</label>
+              <select id="categoria" name="categoria" class="form-control" required>
+                <option value="">-- Seleccione una Categoría --</option>
+                <option value="perros">Perros</option>
+                <option value="gatos">Gatos</option>
+                <option value="fauna_silvestre">Fauna Silvestre</option>
+              </select>
+            </div>
+
+            <div class="form-group form-group-full">
+              <span class="form-label">Nivel de Urgencia Médica:</span>
+              <div class="radio-group">
+                <label for="urgencia_alta" class="radio-item">
+                  <input type="radio" id="urgencia_alta" name="urgencia" value="alta" required>
+                  <span class="badge badge-high">Alta</span>
+                </label>
+
+                <label for="urgencia_media" class="radio-item">
+                  <input type="radio" id="urgencia_media" name="urgencia" value="media">
+                  <span class="badge badge-medium">Media</span>
+                </label>
+
+                <label for="urgencia_baja" class="radio-item">
+                  <input type="radio" id="urgencia_baja" name="urgencia" value="baja">
+                  <span class="badge badge-low">Baja</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group form-group-full">
+              <label for="descripcion_estado" class="form-label">Descripción Detallada del Estado del Animal:</label>
+              <textarea id="descripcion_estado" name="descripcion_estado" rows="5" class="form-control" required placeholder="Describa textualmente las condiciones físicas, heridas visibles o desnutrición..."></textarea>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Registrar Caso en el Sistema</button>
+          <button type="reset" class="btn btn-secondary">Restablecer Campos</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Universidad Técnica de Manabí - Desarrollo de Sistemas Informáticos. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
